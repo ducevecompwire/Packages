@@ -1,20 +1,20 @@
-def metade(p):
+def metade(p, format=False):
     met = p / 2
-    return met
+    return met if format is False else moeda(met)
     
-def dobro(p):
+def dobro(p, format=False):
     dob = p * 2
-    return dob
+    return dob if format is False else moeda(dob)
     
-def aumentar10(p):
-    b = p * 10 / 100
+def aumentar(p, taxa, format=False):
+    b = (p * taxa) / 100
     c = p + b
-    return c
+    return c if format is False else moeda(c)
    
-def reduzir13(p):
-    b = p * 13 / 100
+def reduzir(p, taxa, format=False):
+    b = p * taxa / 100
     c = p - b
-    return c
+    return c if format is False else moeda(c)
 
 def moeda(p=0, moeda= 'R$'):
     return f'{moeda}{p}'.replace('.', ',')
