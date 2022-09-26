@@ -15,3 +15,6 @@ def reduzir13(p):
     b = p * 13 / 100
     c = p - b
     return c
+
+def moeda(p=0, moeda= 'R$'):
+    return f'{moeda}{p}'.replace('.', ',')
