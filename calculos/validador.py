@@ -1,0 +1,11 @@
+# VALIDANDO DADOS E DESCOBRINDO SUAS FUNÇÕES
+
+a = input('Digite algo: ')
+print(f'O tipo primitivo desse valor é {type(a)}' )
+print(f'Só tem espaço? {a.isspace()}' )
+print(f'É um número? {a.isnumeric()}' )
+print(f'É alfabético? {a.isalpha()}' )
+print(f'É um alfanumérico? {a.isalpha()}' )
+print(f'Está em maiúscula? ? {a.isupper()}' )
+print(f'Está em minúscula? ? {a.islower()}' )
+print(f'Está capitalizada? ? {a.istitle()}' )
